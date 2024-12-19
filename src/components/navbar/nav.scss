@@ -1,0 +1,39 @@
+.nav{
+    padding-bottom: 40px;
+    h1{
+       color: limegreen;
+       font-size: 46px; 
+       text-align: center;
+       padding: 30px;
+       font-weight: 500
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 50px;
+    }
+
+    .redirectBtn{
+        padding: 6px 18px;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.8);
+        transition: .3s;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover{
+            box-shadow: 0 0 0 transparent;
+            border: 2px solid gold;
+            color: gold;
+            
+
+        }
+    }
+
+
+}

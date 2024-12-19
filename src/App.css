@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.title_font{
+  font-family: "Orbitron", sans-serif;
+}
+
+:root{
+  --limegreen: #00FF00;
+
+  --secondaryBlue: #93c5fd;
+
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+
+  background: url(./img/techBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(4px);
+}
+
+
+
+.container{
+  max-width: 1020px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
