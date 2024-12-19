@@ -1,26 +1,14 @@
 import { useState } from "react";
 import { useGetCarsQuery } from "../../redux/api/carsApi";
 import Car from "../singleCAR/Car";
-import { useCreateWinnerMutation } from "../../redux/api/winnersApi";  
 import './raceTable.scss';
 
 const RaceTable = () => {
   const [page, setPage] = useState(1);
   const limit = 5;
   const { data, isLoading, error } = useGetCarsQuery({ page, limit });
-  const [createWinner] = useCreateWinnerMutation();
 
-  const startRace = () => {
-    const winner = data?.cars[0]; 
-    if (winner) {
-      const winnerData = {
-        id: winner.id,
-        wins: 1,
-        time: 10, 
-      };
-      createWinner(winnerData);
-    }
-  };
+  
 
   return (
     <div className="raceTable">
@@ -57,12 +45,7 @@ const RaceTable = () => {
         </button>
       </div>
 
-      <button
-        onClick={startRace}
-        className="px-4 py-1 bg-[green] border-2 ml-2 border-[lime] rounded text-[#fff]"
-      >
-        Start Race
-      </button>
+      
     </div>
   );
 };
